@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500');
+
+/* Universal Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Global Style */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+img {
+	width: 100px;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto', Arial, Helvetical, sans-serif;
+	color: rgb(0, 0, 0);
+}
+h1 {
+	font-size: 10pt;
+}
+
+/* Links */
+
+a {
+	color: black;
+	text-decoration: none;
+	/* Easy Hover Over Links */
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+a:hover {
+	color: blue;
+}
+
+/* Header & Navigation */
+
+header {
+	width: 100%;
+	padding: 20px;
+	position: fixed;
+}
+.mainnav ul {
+	padding: 10px 0px;
+	list-style: none;
+	font-size: 10pt;
+	position: fixed;
+}
+.mainnav ul li {
+	margin: 0px 40px 0px 0px;
+	display: inline-block;
+}
+
+/* Footer Styles */
+
+footer {
+	padding: 20px;
+    font-size: 10pt;
+}
+
+/* -------------------------------
+
+        ABOUT PAGE 
+
+-------------------------------*/
+.row {
+    max-width: 800px;
+}
+.col-1-3, .col-2-3 {
+	border: 1px;
+	/* Makes everything inline, like a paragraph of text, bumps up to the top left corner*/
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding: 20px;
+}
+.col-1-3 {
+	width: 20%;
+	
+}
+.col-2-3 {
+	width: 80%;
+	align-content: center;
+	font-size: 30pt;
+	line-height: 1.2;
+	margin-top: 100px;
+	text-align: center;
+}
+
+#about .row {
+    max-width: 1200px;
+}
+
+/* layout */
+.navigation {
+	font-size: 12pt;
+	list-style: none;
+    margin-top: 100px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+/* -------------------------------
+
+        PHOTO PAGE 
+
+-------------------------------*/
+
+
+/*-------------------
+    
+    GRID SECTION
+
+-------------------*/
+
+* {
+    /* Anything within the border, that's the size */
+    box-sizing: border-box;
+    -mox-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+}
+
+.row {
+    max-width: 600px;
+    /* THIS IS HOW YOU CENTER */
+    margin: 0 auto;
+    clear: both;
+}
+
+.col-1-3,
+.col-1-2,
+.col-2-3,
+.col-1-4 {
+    /* Makes everything inline, like a paragraph of text, bumps up to the top left corner*/
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+.col-1-4 {
+    width: 25%;
+
+}
+
+/* ---------------------
+
+    PHONE / TABLETS / ETC 
+
+---------------------*/
+
+@media only screen and  (max-width: 500px) {
+    .col-1-3,
+    .col-2-3,
+    .col-1-4,
+    .col-1-2 {
+        width: 100%;
+    }
+}
+
+/* ---------------------
+
+    THUMBNAILS
+
+---------------------*/
+
+.thumbnails {
+    max-width: 980px;
+    margin: auto;
+    background-color: white;
+    list-style-type: none;
+
+}
+
+.thumbnails ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.thumbnails ul li {
+    margin: 15px;
+    width: 30%;
+    background: white;
+    border: 1px solid white;
+}
+
+.thumbnails ul li img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px;) {
+    .thumbnails ul li {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
